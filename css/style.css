@@ -1,0 +1,106 @@
+body {
+    color: #141522;
+    font-family: 'Plus Jakarta Sans';
+    margin: 0 auto;
+    background: #FAFAFA;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+h1 {
+    font-size: 24px;
+    line-height: 150%;
+}
+/* ------------------------------------------------------------------------------------ */
+._wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+._container {
+    padding: 32px;
+}
+._active-menu-iteam {
+    background: #F5F5F7;
+    border-radius: 10px;
+    color: #141522;
+}
+/* --TASKBAR-LEFT---------------------------------------------------------------------------------- */
+.taskbar-left {
+    background-color: #fff;
+}
+.taskbar-left-container {
+    min-height: 100%;
+}
+.taskbar-left-wrapper {
+    position: relative;
+}
+.logo {
+}
+.menu {
+    margin-top: 60px;
+}
+.menu-list {
+    color: #8E92BC;
+}
+.menu-list>*:not(:first-child) {
+    margin-top: 24px;
+}
+.menu-iteam {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.menu-icon {
+}
+.menu-title {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-left: 12px;
+}
+.question {
+    width: 100%;
+    bottom: 0;
+}
+.quiestion-icon {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(49px);
+}
+.question-body {
+    position: relative;
+    background: #141522;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    padding-top: 71px;
+    padding-bottom: 16px;
+}
+.question-body 
+.question-title {
+    line-height: 150%;
+    text-align: center;
+}
+.question-subtitle {
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 152px;
+}
+.question-btn {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12px 0px;
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 156px;
+}
