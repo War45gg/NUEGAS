@@ -5,6 +5,7 @@ body {
     background: #FAFAFA;
     font-weight: 600;
     font-size: 16px;
+    line-height: 150%;
     letter-spacing: -0.02em;
 }
 h1 {
@@ -104,4 +105,90 @@ a {
     margin: 0 auto;
     margin-top: 45px;
     max-width: 156px;
+}
+/* --MAIN---------------------------------------------------------------------------------- */
+/* --HEADER---------------------------------------------------------------------------------- */
+.main {
+    width: 100%;
+    max-width: 752px;
+}
+.header {
+    padding-bottom: 44px;
+}
+.header_container {
+}
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.greeting {
+}
+.user_name {
+    font-size: 24px;
+    line-height: 150%;
+    color: #141522;
+    margin-bottom: 8px;
+}
+._header_subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #54577A;
+}
+.header-icon {
+    display: flex;
+    align-items: center;
+}
+.header-icon>*:not(:last-child) {
+    margin-right: 38px;
+}
+/* --STATISTIC--------------------------------------------------------------------------------- */
+.statistic {
+}
+._container {
+}
+.statistic-container {
+}
+.statistic-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.running-app {
+    background: #141522;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    width: 100%;
+    max-width: 194px;
+}
+.running-app>*:not(:first-child) {
+    margin-top: 16px;
+}
+.running-title {
+    color: #fff;
+}
+.counter {
+    display: block;
+    color: #fff;
+    font-size: 32px;
+}
+.running-info {
+    display: flex;
+    align-items: center;
+}
+.running-info>div {
+    margin-left: 18px;
+}
+.task {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+.running-info-title {
+    color: #8E92BC;
+    font-weight: 500;
+    font-size: 14px;
+}
+.activity-app {
 }
