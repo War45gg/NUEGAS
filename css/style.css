@@ -22,6 +22,9 @@ a {
     min-height: 100vh;
     overflow: hidden;
 }
+._hidden {
+    display: none;
+}
 ._container {
     padding: 32px;
 }
@@ -30,6 +33,20 @@ a {
     border-radius: 10px;
     color: #141522;
 }
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-title {
+    font-size: 24px;
+}
+.slider-buttons {
+    display: flex;
+}
+.slider-btn:first-child {
+    margin-right: 8px;
+}
 /* --TASKBAR-LEFT---------------------------------------------------------------------------------- */
 .taskbar-left {
     background-color: #fff;
@@ -37,8 +54,6 @@ a {
 .taskbar-left-container {
     position: relative;
     height: 100%;
-}
-.logo {
 }
 .menu {
     margin-top: 60px;
@@ -53,8 +68,6 @@ a {
     display: flex;
     cursor: pointer;
     padding: 10px 20px;
-}
-.menu-icon {
 }
 .menu-title {
     font-size: 14px;
@@ -139,6 +152,9 @@ a {
     display: flex;
     align-items: center;
 }
+.header-icon img {
+    cursor: pointer;
+}
 .header-icon>*:not(:last-child) {
     margin-right: 38px;
 }
@@ -172,6 +188,7 @@ a {
     display: block;
     color: #fff;
     font-size: 32px;
+    line-height: 48px;
 }
 .running-info {
     display: flex;
@@ -191,4 +208,109 @@ a {
     font-size: 14px;
 }
 .activity-app {
+    background: #F5F5F7;
+    border-radius: 10px;
+    padding: 20px;
+}
+.activity-app>*:not(:last-child) {
+    margin-bottom: 17px;
+}
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activity-title {
+}
+.activity-select {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.select-header {
+}
+.select-header::after {
+    content: url(./../img/main/statistic/01.svg);
+    position: absolute;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.dropdown {
+    position: absolute;
+    transition: 0.5s;
+}
+.dropdown-list {
+}
+.dropdown-iteam {
+    margin-top: 5px;
+}
+.activity-app img {
+    cursor: pointer;
+}
+/* --MENTORS--------------------------------------------------------------------------------- */
+.mentor {
+    margin-top: 20px;
+}
+.menthor-container {
+}
+.menthor-body {
+    margin-top: 20px;
+}
+.menthor-list {
+    display: flex;
+    justify-content: space-between;
+}
+.menthor-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+    width: 100%;
+    max-width: 328px;
+}
+.menthor-card>*:not(:first-child) {
+    margin-top: 20px;
+}
+.menthor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menthor-info>div {
+    display: flex;
+    align-items: center;
+}
+.menthor-photo {
+    margin-right: 8px;
+}
+.menthor-prof {
+
+}
+.menthor-name {
+}
+.menthor-profession {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+.menhor-unfollow {
+    color: #546FFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+.menhor-follow {
+    color: #54577A;
+}
+.menthor-progress {
+    display: flex;
+    justify-content: space-between;
+}
+.menthor-task {
+}
+.star-raiting {
+}
+.mentor-progress-descr {
+    font-weight: 500;
+    font-size: 14px;
 }
