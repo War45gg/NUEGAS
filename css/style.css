@@ -126,7 +126,7 @@ a {
     max-width: 752px;
 }
 .header {
-    padding-bottom: 44px;
+    padding-bottom: 4px;
 }
 .header_container {
 }
@@ -251,7 +251,6 @@ a {
 }
 /* --MENTORS--------------------------------------------------------------------------------- */
 .mentor {
-    margin-top: 20px;
 }
 .menthor-container {
 }
@@ -289,10 +288,11 @@ a {
 }
 .menthor-name {
 }
-.menthor-profession {
+.card-profession {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
+    margin-top: 4px;
 }
 .menhor-unfollow {
     color: #546FFF;
@@ -313,4 +313,90 @@ a {
 .mentor-progress-descr {
     font-weight: 500;
     font-size: 14px;
+}
+/* --TASK--------------------------------------------------------------------------------- */
+.task {
+    margin-top: 2px;
+    color: #141522;
+}
+.task-container {
+}
+.task-header {
+    margin-bottom: 20px;
+}
+.section-title {
+}
+.task-title {
+    color: #141522;
+}
+.slider-btn {
+    cursor: pointer;
+}
+.task-list {
+    display: flex;
+    justify-content: space-between;
+}
+.task-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+.task-card>*:not(:first-child) {
+    margin-top: 16px;
+}
+.card-name {
+}
+.card-prof {
+}
+.task-progress {
+}
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.progress-title {
+}
+.progress-counter {
+    color: #546FFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+.progress-img {
+}
+.task-time {
+    display: flex;
+    justify-content: space-between;
+}
+.task-time>div {
+    display: flex;
+}
+.task-time>div> img {
+    margin-right: 8px;
+}
+/* --TASK-BAR-RIGHT--------------------------------------------------------------------------------- */
+.taskbar-right {
+    background: #F5F5F7;
+    width: 100%;
+    max-width: 436px;
+}
+._container {
+}
+.task-bar-right-container {
+}
+.calendare {
+}
+.calendare-header {
+}
+.slider-btn {
+}
+.date {
+}
+.calendare-list {
+}
+.calendare-date {
+}
+.day {
+}
+.number {
 }
