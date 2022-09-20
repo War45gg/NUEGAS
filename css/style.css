@@ -126,7 +126,7 @@ a {
     max-width: 752px;
 }
 .header {
-    padding-bottom: 4px;
+    margin-bottom: 44px;
 }
 .header_container {
 }
@@ -160,6 +160,7 @@ a {
 }
 /* --STATISTIC--------------------------------------------------------------------------------- */
 .statistic {
+    margin-bottom: 32px;
 }
 ._container {
 }
@@ -251,6 +252,7 @@ a {
 }
 /* --MENTORS--------------------------------------------------------------------------------- */
 .mentor {
+    margin-bottom: 32px;
 }
 .menthor-container {
 }
@@ -407,6 +409,7 @@ a {
     background-color: #fff;
     padding: 24px;
     margin-top: 32px;
+    border-radius: 10px;
 }
 .today-task>*:not(:first-child) {
     margin-top: 20px;
