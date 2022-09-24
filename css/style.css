@@ -419,6 +419,7 @@ a {
 }
 .more {
     position: relative;
+    cursor: pointer;
 }
 .more-iteam {
     background: #141522;
@@ -444,8 +445,46 @@ a {
     height: 4px;
     margin-left: 7px;
 }
-.task-time {
+.task-descr-time  {
     margin-top: 20px;
     border-bottom: 1px solid #F5F5F7;
     padding-bottom: 32px;
+}
+.task-descr-time {
+   display: flex;
+   justify-content: space-between;
+}
+.task-descr-time>div {
+    display: flex;
+    align-items: center;
+}
+.task-descr-time>div>img {
+    margin-right: 8px;  
+}
+.task-descr {
+    margin-top: 32px;
+}
+.section-header {
+}
+.card-name {
+}
+.card-profession {
+}
+.task-descr-list {
+
+}
+.task-descr-list>* {
+    margin-top: 20px;
+}
+.task-iteam {
+    display: flex;
+    align-items: center;
+}
+.task-iteam-counter {
+    margin-right: 12px;
+}
+.tasck-descr-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
 }
