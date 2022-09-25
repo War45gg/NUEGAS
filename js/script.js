@@ -47,4 +47,7 @@ if (innerWidth<=1375) {
 // Отображение бургера
 if (innerWidth<=1375) {
     burger.classList.remove('_hidden')
+    burger.addEventListener('click', function () {
+        burger.querySelector('.burger-list').classList.toggle('_hidden')
+    })
 }

@@ -153,6 +153,10 @@ a {
     color: #54577A;
 }
 .burger {
+    transition: 0.5s;
+}
+.burger-header {
+    transition: 0.5s;
 }
 .burger-header {
     position: relative;
@@ -198,6 +202,11 @@ a {
     bottom: 6px;
 }
 .burger-list {
+    position: absolute;
+    background: #F5F5F7;   
+    border-radius: 10px; 
+    transition: 0.5s;
+    padding: 10px;
 }
 ._hidden {
 }
@@ -251,6 +260,7 @@ a {
     color: #fff;
     font-size: 32px;
     line-height: 48px;
+    margin-top: 16px;
 }
 .running-info {
     display: flex;
@@ -259,7 +269,7 @@ a {
 .running-info>div {
     margin-left: 18px;
 }
-.task {
+.task-runing {
     display: block;
     font-size: 20px;
     color: #fff;
@@ -614,5 +624,33 @@ a {
     }
     .flex-wrap {
         flex-wrap: wrap;
+    }
+}
+@media (max-width:1155px) {
+    .statistic-wrapper>*:not(:first-child) {
+        margin-top: 32px;
+    }
+    .flex-wrap {
+        justify-content: center;
+    }
+    .running-app {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: none;
+        padding-right: 32px;
+    }
+    .counter {
+        margin-top: 20px;
+    }
+    .task-runing {
+        color: #fff;
+    }
+    .activity-app {
+        max-width: none;
+    }
+    .menthor-card {
+        max-width: none;
     }
 }
