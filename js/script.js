@@ -1,6 +1,10 @@
 const activ_select = document.querySelector('.activity-select')
 const activ_dropdown = activ_select.querySelector('.dropdown')
 const mentor_follow = document.querySelectorAll('.mentor-like')
+const taskbar_left = document.querySelector('.taskbar-left')
+const grerting = document.querySelector('.greeting')
+const grerting_mob = document.querySelector('.greeting-mob')
+const burger = document.querySelector('.burger')
 // Отображение селекта в activity
 activ_select.addEventListener('click', function() {
     activ_dropdown.classList.toggle('_hidden')
@@ -32,3 +36,15 @@ mentor_follow.forEach(function (iteam) {
         }
     })
 })
+
+// Скрытие taskbar-left, перемещение greeting
+if (innerWidth<=1375) {
+    taskbar_left.classList.add('_hidden')
+    grerting.classList.add('_hidden')
+    grerting_mob.classList.remove('_hidden')
+}
+
+// Отображение бургера
+if (innerWidth<=1375) {
+    burger.classList.remove('_hidden')
+}

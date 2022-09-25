@@ -51,9 +51,36 @@
             </div>
         </div>
         <main class="main">
-            <div class="_container">
+            <div class="_container main_container">
                 <header class="header">
                     <div class="header_wrapper">
+                        <div class="burger _hidden">
+                            <div class="burger-header">
+                                <div class="burger-iteam"></div>
+                            </div>
+                            <ul class="burger-list _hidden">
+                                <li class="menu-iteam _active-menu-iteam">
+                                    <img src="./img/taskbar-left/01.svg" alt="" class="menu-icon">
+                                    <h2 class="menu-title">Overview</h2>
+                                </li>
+                                <li class="menu-iteam">
+                                    <img src="./img/taskbar-left/02.svg" alt="" class="menu-icon">
+                                    <h2 class="menu-title">Task</h2>
+                                </li>
+                                <li class="menu-iteam">
+                                    <img src="./img/taskbar-left/03.svg" alt="" class="menu-icon">
+                                    <h2 class="menu-title">Mentors</h2>
+                                </li>
+                                <li class="menu-iteam">
+                                    <img src="./img/taskbar-left/04.svg" alt="" class="menu-icon">
+                                    <h2 class="menu-title">Message</h2>
+                                </li>
+                                <li class="menu-iteam">
+                                    <img src="./img/taskbar-left/05.svg" alt="" class="menu-icon">
+                                    <h2 class="menu-title">Settings</h2>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="greeting">
                             <h1 class="user_name">Hi, Skylar Dias</h1>
                             <p class="_header_subtitle">Let's finish your task today!</p>
@@ -65,7 +92,11 @@
                     </div>
                 </header>
                 <section class="statistic">
-                    <div class="statistic-wrapper">
+                    <div class="greeting greeting-mob _hidden">
+                        <h1 class="user_name">Hi, Skylar Dias</h1>
+                        <p class="_header_subtitle">Let's finish your task today!</p>
+                    </div>
+                    <div class="statistic-wrapper flex-wrap">
                         <div class="running-app">
                             <h2 class="running-title">Running Task</h2>
                             <span class="counter">65</span>
@@ -103,7 +134,7 @@
                         </div>
                     </div>
                     <div class="menthor-body">
-                        <ul class="menthor-list">
+                        <ul class="menthor-list flex-wrap">
                             <li class="menthor-card">
                                 <div class="menthor-info">
                                     <div>
@@ -160,7 +191,7 @@
                         </div>
                     </div>
                     <ul class="task-list">
-                        <li class="task-card">
+                        <li class="task-card flex-wrap">
                             <img src="./img/main/task/task-img01.png" alt="">
                             <h3 class="card-name">Creating Mobile App Design</h3>
                             <h4 class="card-profession">UI UX Design</h4>
@@ -215,6 +246,30 @@
                                 <span class="day">S</span>
                                 <span class="number">10</span>
                             </li>
+                            <li class="calendare-date">
+                                <span class="day">M</span>
+                                <span class="number">11</span>
+                            </li>
+                            <li class="calendare-date">
+                                <span class="day">T</span>
+                                <span class="number">12</span>
+                            </li>
+                            <li class="calendare-date">
+                                <span class="day">W</span>
+                                <span class="number">13</span>
+                            </li>
+                            <li class="calendare-date calendare-today">
+                                <span class="day">T</span>
+                                <span class="number">14</span>
+                            </li>
+                            <li class="calendare-date">
+                                <span class="day">F</span>
+                                <span class="number">15</span>
+                            </li>
+                            <li class="calendare-date">
+                                <span class="day">S</span>
+                                <span class="number">16</span>
+                            </li>
                         </ul>
                     </div>
                 <div class="today-task">
@@ -234,7 +289,7 @@
                             <h3 class="progress-title">Progress</h3>
                             <spam class="progress-counter">90%</spam>
                         </div>
-                            <img src="./img/main/task/progress02.svg" alt="" class="progress-img">
+                            <img src="./img/taskbar-right/progress02.svg" alt="" class="progress-img">
                         <div class="task-descr-time">
                             <div>
                                 <img src="./img/main/task/clock.png" alt="">
@@ -261,6 +316,7 @@
                                     <p class="tasck-descr-text">Design a mobile application with figma</p>
                                 </li>
                             </ul>
+                            <a href="#" class="task-btn">Go To Detail</a>
                         </div>
                     </div>
                 </div>
