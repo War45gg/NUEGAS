@@ -633,6 +633,9 @@ a {
     .flex-wrap {
         justify-content: center;
     }
+    .flex-wrap>*:not(:first-child,.task-card) {
+        margin-top: 32px;
+    }
     .running-app {
         display: flex;
         justify-content: space-between;
@@ -652,5 +655,14 @@ a {
     }
     .menthor-card {
         max-width: none;
+    }
+}
+@media (max-width:1139px) {
+    .task-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .task-card:not(:first-child) {
+        margin-top: 32px;
     }
 }
