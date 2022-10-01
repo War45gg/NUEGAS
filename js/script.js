@@ -5,6 +5,7 @@ const taskbar_left = document.querySelector('.taskbar-left')
 const grerting = document.querySelector('.greeting')
 const grerting_mob = document.querySelector('.greeting-mob')
 const burger = document.querySelector('.burger')
+const task = document.querySelector('.task')
 // Отображение селекта в activity
 activ_select.addEventListener('click', function() {
     activ_dropdown.classList.toggle('_hidden')
@@ -51,3 +52,55 @@ if (innerWidth<=1375) {
         burger.querySelector('.burger-list').classList.toggle('_hidden')
     })
 }
+
+// Работа слайдеров
+// Task
+const task_slider = task.querySelector('.slider-wrapper')
+const task_iteams = Array.from(task_slider.children)
+const sliderBtn = Array.from(task.querySelectorAll('.slider-btn'))
+task_iteams.forEach(function (slide, index) {
+    if (index !== 0) {
+        slide.classList.add('_hidden')
+    }
+    slide.dataset.index = index
+    task_iteams[0].setAttribute('data-active', '')
+})
+
+sliderBtn.forEach(function(iteam,index) {
+    if (index==0) {
+        iteam.addEventListener('click', function() {
+            let activeSlide = task.querySelector('[data-active]')
+            let i = +activeSlide.dataset.index -1
+
+            if (i<0) {
+                i = task_iteams.length - 1
+            }
+
+            let nextSlide = task.querySelector(`[data-index = '${i}']`)
+
+            activeSlide.classList.add('_hidden')
+            activeSlide.removeAttribute('data-active')
+
+            nextSlide.classList.remove('_hidden')
+            nextSlide.setAttribute('data-active', '')
+        })
+    }
+    else {
+        iteam.addEventListener('click', function() {
+            let activeSlide = task.querySelector('[data-active]')
+            let i = +activeSlide.dataset.index +1
+
+            if (i==task_iteams-1) {
+                i = 0
+            }
+
+            let nextSlide = task.querySelector(`[data-index = '${i}']`)
+
+            activeSlide.classList.add('_hidden')
+            activeSlide.removeAttribute('data-active')
+
+            nextSlide.classList.remove('_hidden')
+            nextSlide.setAttribute('data-active', '')
+        })
+    }
+})
