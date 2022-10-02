@@ -665,6 +665,7 @@ a {
     .task-card {
         width: 100%;
         max-width: 400px;
+        transition: 0.5s;
     }
     .task-card:not(:first-child) {
         margin-top: 32px;
@@ -677,5 +678,13 @@ a {
     }
     ._wrapper>* {
         max-width: none;
+    }
+}
+@media (max-width:512px) {
+    .task-card:not(:first-child) {
+        margin-top: 0px;
+    }
+    .flex-wrap>*:not(:first-child,.task-card) {
+        margin-top: 0px;
     }
 }
