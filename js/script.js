@@ -47,31 +47,41 @@ if (innerWidth<=1375) {
 }
 
 // Отображение бургера
+
 if (innerWidth<=1375) {
+
     burger.classList.remove('_hidden')
     burger.addEventListener('click', function () {
         burger.querySelector('.burger-list').classList.toggle('_hidden')
     })
+
 }
 
 // Работа слайдеров
 // Task and mentors
+
 if (innerWidth<=512) {
     // Task
     const task_slider = task.querySelector('.slider-wrapper')
     const task_iteams = Array.from(task_slider.children)
     const sliderBtn = Array.from(task.querySelectorAll('.slider-btn'))
     task_iteams.forEach(function (slide, index) {
+
         if (index !== 0) {
             slide.classList.add('_hidden')
         }
+
         slide.dataset.index = index
         task_iteams[0].setAttribute('data-active', '')
+
     })
 
     sliderBtn.forEach(function(iteam,index) {
+
         if (index==0) {
+
             iteam.addEventListener('click', function() {
+
                 let activeSlide = task.querySelector('[data-active]')
                 let i = +activeSlide.dataset.index -1
 
@@ -86,10 +96,14 @@ if (innerWidth<=512) {
 
                 nextSlide.classList.remove('_hidden')
                 nextSlide.setAttribute('data-active', '')
+
             })
+
         }
         else {
+
             iteam.addEventListener('click', function() {
+
                 let activeSlide = task.querySelector('[data-active]')
                 let i = +activeSlide.dataset.index +1
 
@@ -104,7 +118,9 @@ if (innerWidth<=512) {
 
                 nextSlide.classList.remove('_hidden')
                 nextSlide.setAttribute('data-active', '')
+
             })
+            
         }
     })
 
@@ -160,3 +176,38 @@ if (innerWidth<=512) {
         }
     })
 }
+
+// Работа ссылок taskbar-left
+
+const menuList = document.querySelector('.menu-list')
+const menuLinks = Array.from(menuList.children)
+const sections = Array.from((document.querySelector('.main').children))
+menuLinks.forEach(function(iteam, index) {
+
+    // Индексы
+    iteam.dataset.indexLink = index
+    iteam.addEventListener('click', function () {
+
+        menuLinks.forEach(function(iteam) {
+            iteam.classList.remove('_active-menu-iteam')
+
+        })
+
+        this.classList.add('_active-menu-iteam')
+        let i = this.dataset.indexLink
+
+        sections.forEach(function(iteam,index) {
+
+            iteam.dataset.IndexSection = index
+            if (i == iteam.dataset.IndexSection) {
+                sections.forEach(function(iteam,index) {
+                    iteam.classList.add('_hidden')
+                })
+                iteam.classList.remove('_hidden')
+            }
+
+        })
+        
+    })
+
+})
