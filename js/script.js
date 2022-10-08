@@ -178,6 +178,8 @@ if (innerWidth<=512) {
 }
 
 // Работа ссылок taskbar-left
+// Скрытие taskbar-right 
+// Настройка флекс оберток
 
 const menuList = document.querySelector('.menu-list')
 const menuLinks = Array.from(menuList.children)
@@ -204,6 +206,15 @@ menuLinks.forEach(function(iteam, index) {
                     iteam.classList.add('_hidden')
                 })
                 iteam.classList.remove('_hidden')
+                // Фикс проблем с overwie
+            } else if (i!=0) {
+                const taskbar_right = document.querySelector('.taskbar-right')
+                const flex_wrapper = document.querySelector('._flex-wrapper')
+                const main = document.querySelector('.main')
+                taskbar_right.classList.add('_hidden')
+                flex_wrapper.classList.add('_flex-wrapper-second')
+                main.classList.add('main-fix')
+
             }
 
         })
@@ -211,3 +222,4 @@ menuLinks.forEach(function(iteam, index) {
     })
 
 })
+

@@ -17,18 +17,27 @@ a {
 }
 /* ------------------------------------------------------------------------------------ */
 ._wrapper {
-    display: flex;
-    flex-basis: 100vh;
-    flex-grow: 0;
-    flex-shrink: 0;
-    justify-content: space-between;
     overflow: hidden;
+}
+._flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+._flex-wrapper-second {
+    display: flex;
+    min-width: 100%;
+    justify-content: flex-start;
+    height: 100%;
 }
 ._hidden {
     display: none;
 }
 ._container {
     padding: 32px;
+}
+._container-right {
+    padding: 32px;
+    padding-right: 0;
 }
 ._active-menu-iteam {
     background: #F5F5F7;
@@ -51,7 +60,10 @@ a {
 }
 /* --TASKBAR-LEFT---------------------------------------------------------------------------------- */
 .taskbar-left {
+    width: 100%;
+    max-width: 252px;
     background-color: #fff;
+    height: 100%;
 }
 .taskbar-left-container {
     position: relative;
@@ -78,6 +90,7 @@ a {
     margin-left: 12px;
 }
 .question {
+    padding-top: 100%;
     position: relative; 
     width: 100%;
     max-width: 188px;
@@ -126,8 +139,12 @@ a {
 /* --MAIN---------------------------------------------------------------------------------- */
 /* --HEADER---------------------------------------------------------------------------------- */
 .main {
+    position: relative;
     width: 100%;
     max-width: 752px;
+}
+.main-fix {
+    max-width: none;
 }
 .header {
     margin-bottom: 44px;
@@ -596,8 +613,6 @@ a {
 }
 /* MEDIA */
 @media (max-width:1375px) {
-    ._wrapper {
-    }
     .main {
         position: relative;
         margin: 0 auto;
@@ -670,7 +685,7 @@ a {
     }
 }
 @media (max-width:778px) {
-    ._wrapper {
+    ._flex-wrapper {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -683,6 +698,122 @@ a {
         margin-top: 0px;
     }
     .flex-wrap>*:not(:first-child,.task-card) {
+        margin-top: 0px;
+    }
+}
+
+
+
+/* ----TASK-PAGE------------------------------------------------------------------------------------ */
+/* ----HEADER------------------------------------------------------------------------------------ */
+.task-page {
+
+}
+.header-task {
+    background-color: #fff;
+    padding-right: 32px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exploer {
+    width: 100%;
+    max-width: 480px;
+}
+.exploer>*:not(:first-child) {
+    margin-top: 24px;
+}
+.exploer-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 52px;
+}
+.serch {
+    border: 1px solid #F5F5F7;
+    border-radius: 10px;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.serch img {
+    cursor: pointer;
+}
+.serch-iput {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #54577A;
+}
+.info {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+.info>*:not(:first-child,.header-icon) {
+    margin-top: 24px;
+}
+.header-icon {
+}
+.sorting {
+    width: 100%;
+    max-width: 368px;
+    display: flex;
+    justify-content: space-between;
+}
+.sorting>*:not(:last-child) {
+    margin-right: 20px;
+}
+.sorting-iteam {
+    border: 1px solid #F5F5F7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+.sorting-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 12px;
+}
+/* ----TASK-MAIN------------------------------------------------------------------------------------ */
+.task-main {
+    background: #FAFAFA;
+}
+.time-limit {
+    position: relative;
+}
+.task-limit-header {
+    padding-right: 32px;
+    padding-bottom: 18px;
+}
+.task-limit-title {
+}
+.time-limit-list {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+.time-limit-list>*:not(:first-child) {
+    margin-left: 32px;
+}
+.time-limit-card {
+    width: 328px;
+}
+.new-task {
+    padding-top: 350px;
+}
+@media (max-width: 1139px) {
+    .time-limit-card:not(:first-child) {
         margin-top: 0px;
     }
 }
