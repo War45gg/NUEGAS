@@ -4,9 +4,13 @@ const mentor_follow = document.querySelectorAll('.mentor-like')
 const taskbar_left = document.querySelector('.taskbar-left')
 const grerting = document.querySelector('.greeting')
 const grerting_mob = document.querySelector('.greeting-mob')
-const burger = document.querySelector('.burger')
+const burger = document.querySelectorAll('.burger')
 const mentor = document.querySelector('.mentor')
 const task = document.querySelector('.task')
+const taskbar_right = document.querySelector('.taskbar-right')
+const flex_wrapper = document.querySelector('._flex-wrapper')
+const main = document.querySelector('.main')
+
 // Отображение селекта в activity
 activ_select.addEventListener('click', function() {
     activ_dropdown.classList.toggle('_hidden')
@@ -49,10 +53,12 @@ if (innerWidth<=1375) {
 // Отображение бургера
 
 if (innerWidth<=1375) {
+    burger.forEach(function(iteam) {
+        iteam.classList.remove('_hidden')
 
-    burger.classList.remove('_hidden')
-    burger.addEventListener('click', function () {
-        burger.querySelector('.burger-list').classList.toggle('_hidden')
+        iteam.addEventListener('click', function () {
+            iteam.querySelector('.burger-list').classList.toggle('_hidden')
+        })
     })
 
 }
@@ -198,6 +204,7 @@ menuLinks.forEach(function(iteam, index) {
         this.classList.add('_active-menu-iteam')
         let i = this.dataset.indexLink
 
+// Алгоритм отображения секций
         sections.forEach(function(iteam,index) {
 
             iteam.dataset.IndexSection = index
@@ -208,13 +215,14 @@ menuLinks.forEach(function(iteam, index) {
                 iteam.classList.remove('_hidden')
                 // Фикс проблем с overwie
             } else if (i!=0) {
-                const taskbar_right = document.querySelector('.taskbar-right')
-                const flex_wrapper = document.querySelector('._flex-wrapper')
-                const main = document.querySelector('.main')
                 taskbar_right.classList.add('_hidden')
                 flex_wrapper.classList.add('_flex-wrapper-second')
                 main.classList.add('main-fix')
 
+            } else if (i==0) {
+                taskbar_right.classList.remove('_hidden')
+                flex_wrapper.classList.remove('_flex-wrapper-second')
+                main.classList.remove('main-fix')
             }
 
         })
@@ -223,3 +231,42 @@ menuLinks.forEach(function(iteam, index) {
 
 })
 
+// Работа ссылок бургера
+
+const burgerList = document.querySelectorAll('.burger-list')
+burgerList.forEach(function(iteam) {
+    const burgerLink = Array.from(iteam.children)
+
+    burgerLink.forEach(function(iteam,index){
+        iteam.dataset.indexLink = index
+        iteam.addEventListener('click', function(){
+    
+            let i = this.dataset.indexLink
+            sections.forEach(function(iteam,index) {
+                
+                x = iteam.dataset.IndexSection = index
+                iteam.dataset.IndexSection = index
+                if (i == iteam.dataset.IndexSection) {
+                    sections.forEach(function(iteam,index) {
+                        iteam.classList.add('_hidden')
+                    })
+                    iteam.classList.remove('_hidden')
+
+                    // Фикс проблем с overwie
+                } else if (i!=0) {
+                    taskbar_right.classList.add('_hidden')
+                    flex_wrapper.classList.add('_flex-wrapper-second')
+                    main.classList.add('main-fix')
+                    
+                } else if (i==0) {
+                    taskbar_right.classList.remove('_hidden')
+                    flex_wrapper.classList.remove('_flex-wrapper-second')
+                    main.classList.remove('main-fix')
+                }
+
+            })
+
+        })
+    
+    })
+})

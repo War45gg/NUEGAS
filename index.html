@@ -246,39 +246,45 @@
                     <div class="header-task">
                         <div class="_container-right header-task-conrtainer">
                             <div class="header-wrapper">
-                                <div class="exploer">
-                                    <h2 class="exploer-title">Explore Task</h2>
-                                    <div class="serch">
-                                        <input type="text" class="serch-iput" placeholder="Search  Mentors">
-                                        <img src="./img/main/task-page/header/01.svg" alt="">
+                                <div class="header-task-top task-header-flex">
+                                    <div class="burger _hidden">
+                                        <div class="burger-header">
+                                            <div class="burger-iteam"></div>
+                                        </div>
+                                        <ul class="burger-list _hidden">
+                                            <li class="menu-iteam">
+                                                <img src="./img/taskbar-left/01.svg" alt="" class="menu-icon">
+                                                <h2 class="menu-title">Overview</h2>
+                                            </li>
+                                            <li class="menu-iteam _active-menu-iteam">
+                                                <img src="./img/taskbar-left/02.svg" alt="" class="menu-icon">
+                                                <h2 class="menu-title">Task</h2>
+                                            </li>
+                                            <li class="menu-iteam">
+                                                <img src="./img/taskbar-left/03.svg" alt="" class="menu-icon">
+                                                <h2 class="menu-title">Mentors</h2>
+                                            </li>
+                                            <li class="menu-iteam">
+                                                <img src="./img/taskbar-left/04.svg" alt="" class="menu-icon">
+                                                <h2 class="menu-title">Message</h2>
+                                            </li>
+                                            <li class="menu-iteam">
+                                                <img src="./img/taskbar-left/05.svg" alt="" class="menu-icon">
+                                                <h2 class="menu-title">Settings</h2>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="info">
-                                    <ul class="burger-list _hidden">
-                                        <li class="menu-iteam _active-menu-iteam">
-                                            <img src="./img/taskbar-left/01.svg" alt="" class="menu-icon">
-                                            <h2 class="menu-title">Overview</h2>
-                                        </li>
-                                        <li class="menu-iteam">
-                                            <img src="./img/taskbar-left/02.svg" alt="" class="menu-icon">
-                                            <h2 class="menu-title">Task</h2>
-                                        </li>
-                                        <li class="menu-iteam">
-                                            <img src="./img/taskbar-left/03.svg" alt="" class="menu-icon">
-                                            <h2 class="menu-title">Mentors</h2>
-                                        </li>
-                                        <li class="menu-iteam">
-                                            <img src="./img/taskbar-left/04.svg" alt="" class="menu-icon">
-                                            <h2 class="menu-title">Message</h2>
-                                        </li>
-                                        <li class="menu-iteam">
-                                            <img src="./img/taskbar-left/05.svg" alt="" class="menu-icon">
-                                            <h2 class="menu-title">Settings</h2>
-                                        </li>
-                                    </ul>
+                                    <h2 class="exploer-title exploer-title-d">Explore Task</h2>
                                     <div class="header-icon">
                                         <img src="./img/main/header/massange.svg" alt="">
                                         <img src="./img/main/header/user.png" alt="">
+                                    </div>
+                                </div>
+                                <h2 class="exploer-title exploer-title-m _hidden">Explore Task</h2>
+                                <div class="header-task-bottom task-header-flex">
+                                    <div class="serch">
+                                        <input type="text" class="serch-iput" placeholder="Search  Mentors">
+                                        <img src="./img/main/task-page/header/01.svg" alt="">
                                     </div>
                                     <ul class="sorting">
                                         <li class="sorting-iteam">
@@ -288,6 +294,9 @@
                                         <li class="sorting-iteam">
                                             <img src="./img/main/task-page/header/03.svg" alt="">
                                             <h3 class="sorting-title">Sort By : Deadline</h3>
+                                        </li>
+                                        <li class="sorting-iteam sorting-iteam-m _hidden">
+                                            <img src="./img/main/task-page/header/04.svg" alt="">
                                         </li>
                                     </ul>
                                 </div>
@@ -487,7 +496,76 @@
                                     </li>
                                 </ul>
                             </section>
+                            <section class="task-detail">
+                                <div class="detaik-wrapper">
+                                    <div class="datail-body">
+                                        <div class="detail-img-wrapper">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="detail-info">
+                                            <h2 class="detail-title">Creating Awesome Mobile Apps</h2>
+                                            <div class="detail-subtitle">
+                                                <div>
+                                                    <h3 class="card-profession">UI UX Design</h3>
+                                                    <button class="mentor-like menhor-unfollow detail-follow">+ Get Mentors</button>
+                                                </div>
 
+                                                <div>
+                                                    <div class="detail-task">
+                                                        <img src="./img/main/task-page/main/detail/02.svg" alt="task">
+                                                        <span class="detail-students">200 Students Involved</span>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./img/main/task/clock.png" alt="">
+                                                        <h5>3 Days Left</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="detail-text">
+                                                <h3 class="detail-text-title">Description</h3>
+                                                <p>Follow the video tutorial above. Understand how to use each tool in the Figma application. Also learn how to make a good and correct design. Starting from spacing, typography, content, and many other design hierarchies. Then try to make it yourself with your imagination and inspiration.</p>
+                                            </div>
+                                            <ul class="detail-list">
+                                                <li class="detail-iteam">
+                                                    <img src="./img/main/task-page/main/detail/03.svg" alt="">
+                                                    <h5>Understanding the tools in Figma</h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="detail-side">
+                                        <h4 class="side-top-title">Assigned Assignments</h4>
+                                        <div class="side-title-wrapper">
+                                            <h2 class="side-title">Creating Awesome Mobile Apps</h2>
+                                            <h5 class="card-profession">UI UX Design</h5>
+                                        </div>
+                                        <div class="side-students">
+                                            <h3 class="students-title">Detail Student</h3>
+                                            <ul class="stidents-list">
+                                                <li class="side-iteam students-iteam">
+                                                    <h6>Student's name</h5>
+                                                    <h5>Skylar Dias</h5>
+                                                </li>
+                                                /ul>
+                                        </div>
+                                        <div class="side-task">
+                                            <h3 class="side-task-title">File Task</h3>
+                                            <div class="side-iteam">
+                                                <h6>Last Modified</h5>
+                                                <h5>1 July 2022</h5>
+                                            </div>
+                                            <div class="file-meneger">
+                                                <h6>Last Modified</h6>
+                                                <div class="import">
+
+                                                </div>
+                                                <span>*drag or browser from device</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>

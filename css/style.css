@@ -149,13 +149,9 @@ a {
 .header {
     margin-bottom: 44px;
 }
-.header_container {
-}
 .header_wrapper {
     display: flex;
     justify-content: space-between;
-}
-.greeting {
 }
 .user_name {
     font-size: 24px;
@@ -224,16 +220,7 @@ a {
     border-radius: 10px; 
     transition: 0.5s;
     padding: 10px;
-}
-._hidden {
-}
-.menu-iteam {
-}
-._active-menu-iteam {
-}
-.menu-icon {
-}
-.menu-title {
+    color: #8E92BC;
 }
 .header-icon {
     display: flex;
@@ -248,8 +235,6 @@ a {
 /* --STATISTIC--------------------------------------------------------------------------------- */
 .statistic {
     margin-bottom: 32px;
-}
-.statistic-container {
 }
 .statistic-wrapper {
     display: flex;
@@ -307,16 +292,12 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.activity-title {
-}
 .activity-select {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     margin-right: 20px;
     cursor: pointer;
-}
-.select-header {
 }
 .select-header::after {
     content: url(./../img/main/statistic/01.svg);
@@ -328,8 +309,6 @@ a {
     position: absolute;
     transition: 0.5s;
 }
-.dropdown-list {
-}
 .dropdown-iteam {
     margin-top: 5px;
 }
@@ -339,8 +318,6 @@ a {
 /* --MENTORS--------------------------------------------------------------------------------- */
 .mentor {
     margin-bottom: 32px;
-}
-.menthor-container {
 }
 .menthor-body {
     margin-top: 20px;
@@ -371,11 +348,6 @@ a {
 .menthor-photo {
     margin-right: 8px;
 }
-.menthor-prof {
-
-}
-.menthor-name {
-}
 .card-profession {
     font-weight: 500;
     font-size: 12px;
@@ -394,10 +366,6 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.menthor-task {
-}
-.star-raiting {
-}
 .mentor-progress-descr {
     font-weight: 500;
     font-size: 14px;
@@ -407,12 +375,8 @@ a {
     margin-top: 2px;
     color: #141522;
 }
-.task-container {
-}
 .task-header {
     margin-bottom: 20px;
-}
-.section-title {
 }
 .task-title {
     color: #141522;
@@ -436,25 +400,15 @@ a {
 .task-card>*:not(:first-child) {
     margin-top: 16px;
 }
-.card-name {
-}
-.card-prof {
-}
-.task-progress {
-}
 .progress-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
 }
-.progress-title {
-}
 .progress-counter {
     color: #546FFF;
     font-weight: 500;
     font-size: 16px;
-}
-.progress-img {
 }
 .task-time {
     display: flex;
@@ -472,8 +426,6 @@ a {
     width: 100%;
     max-width: 436px;  
 }
-.task-bar-right-container {
-}
 .calendare {
     background-color: #fff;
     padding: 20px;
@@ -482,10 +434,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.slider-btn {
-}
-.date {
 }
 .calendare-list {
     margin-top: 36px;
@@ -498,7 +446,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-.day {}
 .number {
     font-size: 12px;
     line-height: 15px;
@@ -575,15 +522,6 @@ a {
 }
 .task-descr {
     margin-top: 32px;
-}
-.section-header {
-}
-.card-name {
-}
-.card-profession {
-}
-.task-descr-list {
-
 }
 .task-descr-list>* {
     margin-top: 20px;
@@ -707,23 +645,25 @@ a {
 /* ----TASK-PAGE------------------------------------------------------------------------------------ */
 /* ----HEADER------------------------------------------------------------------------------------ */
 .task-page {
-
 }
 .header-task {
     background-color: #fff;
     padding-right: 32px;
 }
 .header-wrapper {
+}
+.task-header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.exploer {
-    width: 100%;
-    max-width: 480px;
+.header-task-top {
+    padding-bottom: 24px;
 }
-.exploer>*:not(:first-child) {
-    margin-top: 24px;
+.header-task-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .exploer-title {
     font-weight: 600;
@@ -731,6 +671,8 @@ a {
     line-height: 52px;
 }
 .serch {
+    width: 100%;
+    max-width: 480px;
     border: 1px solid #F5F5F7;
     border-radius: 10px;
     padding: 14px 28px;
@@ -747,15 +689,6 @@ a {
     line-height: 15px;
     color: #54577A;
 }
-.info {
-    position: relative;
-    width: 100%;
-    max-width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: 20px;
-}
 .info>*:not(:first-child,.header-icon) {
     margin-top: 24px;
 }
@@ -766,6 +699,7 @@ a {
     max-width: 368px;
     display: flex;
     justify-content: space-between;
+    margin-left: 32px;
 }
 .sorting>*:not(:last-child) {
     margin-right: 20px;
@@ -779,11 +713,37 @@ a {
     padding: 14px 28px;
     cursor: pointer;
 }
+.sorting-iteam-m {
+    display: none;
+    padding: 14px;
+    max-width: 54px;
+}
 .sorting-title {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     margin-left: 12px;
+}
+@media (max-width: 1375px) {
+    .exploer-title-d {
+        display: none;
+    }
+    .exploer-title-m {
+        display: block;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 668px) {
+    .sorting {
+        display: block;
+        max-width: 54px;
+    }
+    .sorting>:not(:last-child) {
+        display: none;
+    }
+    .sorting-iteam-m {
+        display: block;
+    }
 }
 /* ----TASK-MAIN------------------------------------------------------------------------------------ */
 .task-main {
@@ -800,17 +760,24 @@ a {
 }
 .time-limit-list {
     position: absolute;
-    display: flex;
     overflow: hidden;
+    display: flex;
 }
 .time-limit-list>*:not(:first-child) {
     margin-left: 32px;
 }
 .time-limit-card {
     width: 328px;
+    height: 314px;
 }
 .new-task {
     padding-top: 350px;
+    padding-bottom: 350px;
+}
+.new-task {
+    position: relative;
+}
+.task-limit-header {
 }
 @media (max-width: 1139px) {
     .time-limit-card:not(:first-child) {
