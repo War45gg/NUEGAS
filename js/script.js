@@ -270,3 +270,14 @@ burgerList.forEach(function(iteam) {
     
     })
 })
+
+// Алгоритм нажатия на task-card
+const taskCard = Array.from(document.querySelectorAll('.task-card'))
+const taskWrap = document.querySelector('.task-limit-wrapper')
+const taskDetail = document.querySelector('.task-detail')
+taskCard.forEach(function (card) {
+    card.addEventListener('click', function(){
+        taskWrap.classList.add('_hidden')
+        taskDetail.classList.remove('_hidden')
+    })
+})

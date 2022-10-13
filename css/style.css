@@ -392,6 +392,7 @@ a {
     background: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
+    cursor: pointer;
 }
 .task-card > img {
     display: block;
@@ -751,6 +752,7 @@ a {
 }
 .time-limit {
     position: relative;
+    padding-bottom: 350px;
 }
 .task-limit-header {
     padding-right: 32px;
@@ -771,7 +773,6 @@ a {
     height: 314px;
 }
 .new-task {
-    padding-top: 350px;
     padding-bottom: 350px;
 }
 .new-task {
