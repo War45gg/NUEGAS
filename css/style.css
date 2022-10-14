@@ -63,7 +63,6 @@ a {
     width: 100%;
     max-width: 252px;
     background-color: #fff;
-    height: 100%;
 }
 .taskbar-left-container {
     position: relative;
@@ -784,4 +783,102 @@ a {
     .time-limit-card:not(:first-child) {
         margin-top: 0px;
     }
+}
+/* ----TASK-DETAIL------------------------------------------------------------------------------------ */
+.task-detail {
+    padding-right: 20px;
+}
+.detaik-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.datail-body {
+    background: #FFFFFF;
+    border-radius: 10px;
+    max-width: 720px;
+}
+.detail-img-wrapper {
+    position: relative;
+}
+.vidio-bar {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.detail-info>*:not(:first-child,.detail-subtitle,.detail-text,.detail-list){
+    margin-top: 24px;
+}
+.detail-info {
+    padding: 24px;
+}
+.detail-title {
+    font-size: 32px;
+}
+.detail-subtitle>div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.detail-clock {
+    display: flex;
+    align-items: center;
+}
+.card-profession {
+}
+.detail-line {
+    display: block;
+    margin: 0px 10px;
+}
+.detail-students {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.detail-text>* {
+    margin-top: 31px;
+}
+.detail-text-title {
+    font-size: 24px;
+}
+.detail-list-title {
+    font-size: 24px;
+}
+.detail-list {
+}
+.detail-iteam {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.detail-iteam >:first-child {
+    margin-right: 12px;
+}
+.detail-side {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.side-top-title {
+}
+.side-title-wrapper {
+}
+.side-title {
+}
+.side-students {
+}
+.students-title {
+}
+.stidents-list {
+}
+.side-iteam {
+}
+.students-iteam {
+}
+.side-task {
+}
+.side-task-title {
+}
+.file-meneger {
+}
+.import {
 }
