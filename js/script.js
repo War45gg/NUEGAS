@@ -277,7 +277,36 @@ const taskWrap = document.querySelector('.task-limit-wrapper')
 const taskDetail = document.querySelector('.task-detail')
 taskCard.forEach(function (card) {
     card.addEventListener('click', function(){
+
         taskWrap.classList.add('_hidden')
         taskDetail.classList.remove('_hidden')
+
+            // Получение img карточек и их src
+        let cardImage = 0
+        Array.from(card.children).forEach(function(iteam,index) {
+            if (index == 0) {
+                cardImage = iteam
+            }
+        })
+        let cardImageSrc = cardImage.src
+        
+        console.log(cardImageSrc)
+        
+        const detailImage = taskDetail.querySelector('.datail-img')
+        detailImage.setAttribute('src', cardImageSrc)
+
+        // Замена заголовков
+        taskDetail.querySelector('.side-title').innerText = taskDetail.querySelector('.detail-title').innerText = card.querySelector('.card-name').innerText
+        taskDetail.querySelector('.side-profession').innerText = taskDetail.querySelector('.card-profession').innerText = card.querySelector('.card-profession').innerText
+        taskDetail.querySelector('.detail-clock').querySelector('h5').innerText = card.querySelector('.task-time').querySelector('div').querySelector('h5').innerText 
+
+    })
+
+    // Переход назад путем нажатия на таск
+    const taskLink = document.querySelector(`[data-index-link= '1']`)
+    taskLink.addEventListener('click',function(iteam) {
+        taskWrap.classList.remove('_hidden')
+        taskDetail.classList.add('_hidden')
     })
 })
+

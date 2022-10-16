@@ -39,6 +39,14 @@ a {
     padding: 32px;
     padding-right: 0;
 }
+@media (max-width:375px) {
+    ._container,._container-right {
+        padding: 24px;
+    }
+    ._container-right {
+        margin-right: 0;
+    }
+}
 ._active-menu-iteam {
     background: #F5F5F7;
     border-radius: 10px;
@@ -352,6 +360,7 @@ a {
     font-size: 12px;
     line-height: 15px;
     margin-top: 4px;
+    color: #8E92BC;
 }
 .menhor-unfollow {
     color: #546FFF;
@@ -786,11 +795,12 @@ a {
 }
 /* ----TASK-DETAIL------------------------------------------------------------------------------------ */
 .task-detail {
-    padding-right: 20px;
+    padding-right: 32px;
 }
 .detaik-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .datail-body {
     background: #FFFFFF;
@@ -799,6 +809,11 @@ a {
 }
 .detail-img-wrapper {
     position: relative;
+    width: 100%;
+    min-height: 360px;
+}
+.datail-img {
+
 }
 .vidio-bar {
     position: absolute;
@@ -814,6 +829,8 @@ a {
 }
 .detail-title {
     font-size: 32px;
+    letter-spacing: -0.03em;
+    line-height: 48px;
 }
 .detail-subtitle>div {
     display: flex;
@@ -823,8 +840,6 @@ a {
 .detail-clock {
     display: flex;
     align-items: center;
-}
-.card-profession {
 }
 .detail-line {
     display: block;
@@ -857,28 +872,69 @@ a {
 .detail-side {
     background: #FFFFFF;
     border-radius: 10px;
+    padding: 24px;
+    max-height: 812px;
+    margin-left: 24px;
+}
+.detail-side>:not(:first-child) {
+    margin-top: 24px;
 }
 .side-top-title {
+    font-size: 14px;
 }
-.side-title-wrapper {
+.side-title-wrapper>:not(:first-child) {
+    margin-top: 12px;
 }
 .side-title {
+    font-size: 24px;
+    max-width: 324px;
+    letter-spacing: -0.03em;
 }
 .side-students {
 }
 .students-title {
+    font-size: 20px;
 }
 .stidents-list {
 }
 .side-iteam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
-.students-iteam {
+.side-iteam,.file-meneger h6 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #54577A;
+}
+.side-iteam h5 {
+    font-size: 14px;
 }
 .side-task {
 }
 .side-task-title {
 }
-.file-meneger {
+.file-meneger>:first-child {
+    margin-top: 20px;
 }
 .import {
+}
+.impot-img {
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+@media (max-width: 1179px) {
+    .detail-side {
+        margin-left: auto;
+        margin-top: 24px;
+    }
+}
+@media (max-width: 400px) {
+    .detail-students {
+        margin-right: 10px;
+    }
+    .detail-info {
+        padding: 16px;
+    }
 }
