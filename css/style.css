@@ -813,7 +813,7 @@ a {
     min-height: 360px;
 }
 .datail-img {
-
+    transform: scale(1);
 }
 .vidio-bar {
     position: absolute;

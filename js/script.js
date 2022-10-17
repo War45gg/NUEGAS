@@ -288,7 +288,8 @@ taskCard.forEach(function (card) {
                 cardImage = iteam
             }
         })
-        let cardImageSrc = cardImage.src
+        let cardImageSrc = cardImage.src.split('.png')[0] + 'D.png'
+        console.log(cardImageSrc)
         
         console.log(cardImageSrc)
         
@@ -303,10 +304,12 @@ taskCard.forEach(function (card) {
     })
 
     // Переход назад путем нажатия на таск
-    const taskLink = document.querySelector(`[data-index-link= '1']`)
-    taskLink.addEventListener('click',function(iteam) {
-        taskWrap.classList.remove('_hidden')
-        taskDetail.classList.add('_hidden')
+    const taskLink = document.querySelectorAll(`[data-index-link= '1']`)
+    taskLink.forEach(function (iteam) {
+        iteam.addEventListener('click',function(iteam) {
+            taskWrap.classList.remove('_hidden')
+            taskDetail.classList.add('_hidden')
+        })
     })
 })
 
