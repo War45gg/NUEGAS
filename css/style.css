@@ -18,16 +18,19 @@ a {
 /* ------------------------------------------------------------------------------------ */
 ._wrapper {
     overflow: hidden;
+    position: relative;
 }
 ._flex-wrapper {
     display: flex;
     justify-content: space-between;
+    min-width: 0;
 }
 ._flex-wrapper-second {
     display: flex;
     min-width: 100%;
     justify-content: flex-start;
     height: 100%;
+    min-width: 0;
 }
 ._hidden {
     display: none;
@@ -44,7 +47,7 @@ a {
         padding: 24px;
     }
     ._container-right {
-        margin-right: 0;
+        padding-right: 0;
     }
 }
 ._active-menu-iteam {
@@ -149,6 +152,7 @@ a {
     position: relative;
     width: 100%;
     max-width: 752px;
+    min-width: 0;
 }
 .main-fix {
     max-width: none;
@@ -757,10 +761,11 @@ a {
 /* ----TASK-MAIN------------------------------------------------------------------------------------ */
 .task-main {
     background: #FAFAFA;
+    position: relative;
 }
 .time-limit {
     position: relative;
-    padding-bottom: 350px;
+    padding-bottom: 360px;
 }
 .task-limit-header {
     padding-right: 32px;
@@ -778,13 +783,9 @@ a {
 }
 .time-limit-card {
     width: 328px;
-    height: 314px;
+    max-height: 314px;
 }
 .new-task {
-    padding-bottom: 350px;
-}
-.new-task {
-    position: relative;
 }
 .task-limit-header {
 }
@@ -937,4 +938,93 @@ a {
     .detail-info {
         padding: 16px;
     }
+}
+
+/* ----MENTORS-PAGE------------------------------------------------------------------------------------ */
+.mentors-page {
+
+}
+.recente-mentors {
+}
+.recent-header {
+    padding-right: 32px;
+    padding-bottom: 18px;
+}
+/* ----MENTORS-PAGE------------------------------------------------------------------------------------ */
+.recent-slider {
+    
+}
+.recent-card {
+    width: 380px;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    max-width: 1000px;
+}
+/* Слайд */
+.slick-slide{
+    margin-left: 32px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    background-color: pink;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* ---------------------------------------------------------------------------------------- */
+.mentors-gallary {
+    margin-top: 32px;
+}
+.mentors-gallary-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.mentors-gallary-body {
+    padding-right: 32px;
+    max-width: 1158px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,354px);
+    gap: 32px;
+}
+.gallary-card {
+    width: 100%;
+    max-width: 354px;
+}
+.mentor-text {
+    max-width: 306px;
+    color: #8E92BC;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
 }

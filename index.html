@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,500,600,italic,500italic,600italic" rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="/libs/slick/slick.css">
+    <link rel="stylesheet" href="/libs/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Nuegas</title>
 </head>
@@ -19,23 +21,28 @@
                         <nav class="menu">
                             <ul class="menu-list">
                                 <li class="menu-iteam _active-menu-iteam">
-                                    <img src="./img/taskbar-left/01.svg" alt="" class="menu-icon">
+                                    <img src="./img/taskbar-left/01.svg" alt="" class="menu-icon _hidden">
+                                    <img src="./img/taskbar-left/01d.svg" alt="" class="menu-dark-icon">
                                     <h2 class="menu-title">Overview</h2>
                                 </li>
                                 <li class="menu-iteam">
                                     <img src="./img/taskbar-left/02.svg" alt="" class="menu-icon">
+                                    <img src="./img/taskbar-left/02d.svg" alt="" class="menu-dark-icon _hidden">
                                     <h2 class="menu-title">Task</h2>
                                 </li>
                                 <li class="menu-iteam">
                                     <img src="./img/taskbar-left/03.svg" alt="" class="menu-icon">
+                                    <img src="./img/taskbar-left/03d.svg" alt="" class="menu-dark-icon _hidden">
                                     <h2 class="menu-title">Mentors</h2>
                                 </li>
                                 <li class="menu-iteam">
                                     <img src="./img/taskbar-left/04.svg" alt="" class="menu-icon">
+                                    <img src="./img/taskbar-left/04d.svg" alt="" class="menu-dark-icon _hidden">
                                     <h2 class="menu-title">Message</h2>
                                 </li>
                                 <li class="menu-iteam">
                                     <img src="./img/taskbar-left/05.svg" alt="" class="menu-icon">
+                                    <img src="./img/taskbar-left/05d.svg" alt="" class="menu-dark-icon _hidden">
                                     <h2 class="menu-title">Settings</h2>
                                 </li>
                             </ul>
@@ -52,7 +59,7 @@
                 </div>
             </div>
             <main class="main">
-                <div class="overview">
+                <section class="overview">
                     <div class="_container main_container">
                         <header class="header">
                             <div class="header_wrapper">
@@ -240,9 +247,9 @@
                             </ul>   
                         </section>
                     </div>
-                </div>
+                </section>
     <!-- TASK -->
-                <div class="task-page _hidden">
+                <section class="task-page _hidden">
                     <div class="header-task">
                         <div class="_container-right header-task-conrtainer">
                             <div class="header-wrapper">
@@ -594,7 +601,258 @@
                             </section>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="mentors-page _hidden">
+                    <div class="_container-right">
+
+                        <div class="recente-mentors">
+                            <div class="section-header recent-header">
+                                <h2 class="section-title task-limit-title">Recent Mentorst</h2>
+                                <div class="slider-buttons">
+                                    <img src="./img/main/menthor/02.svg" alt="" class="slider-btn">
+                                    <img src="./img/main/menthor/03.svg" alt="" class="slider-btn">
+                                </div>
+                            </div>
+                            <div class="recent-slider">
+
+                                <div class="menthor-card recent-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/menthor/mentor-photo02.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Abraham Lincoln</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">32 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (510 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card recent-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/menthor/mentor-photo02.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Abraham Lincoln</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">32 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (510 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card recent-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/menthor/mentor-photo02.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Abraham Lincoln</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">32 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (510 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card recent-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/menthor/mentor-photo02.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Abraham Lincoln</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">32 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (510 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mentors-gallary">
+                            <h2 class="mentors-gallary-title">Mentors</h2>
+                            <div class="mentors-gallary-body">
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor01.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Jessica Jane</h3>
+                                                <h4 class="card-profession">Web Developer</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Jessica Jane. I am a doctoral student at Harvard University majoring in Web . . . </p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">40 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,7  (750 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor02.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Alex Stanton</h3>
+                                                <h4 class="card-profession">UI / UX Designer</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Alex Stanton. I am a doctoral student at Oxford University majoring in UI / UX  . . . </p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">60 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (970Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor03.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Antoine Griezmann</h3>
+                                                <h4 class="card-profession">Android Developer</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Antoine Griezmann. I'm an Android Developer at Google company . . .</p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">50 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,8  (830 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor04.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Anna White</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Anna White. I'm a professional 3D Designer at Blender company . . .</p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">60 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,8  (870 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor05.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Richard Kyle</h3>
+                                                <h4 class="card-profession">2D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Richard Kyle. I'm a professional 2D Designer at Photoshop company . . .</p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">60 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,7  (730 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menthor-card gallary-card">
+                                    <div class="menthor-info">
+                                        <div>
+                                            <img src="./img/main/mentors-page/mentor06.png" alt="mentor-phohto" class="menthor-photo">
+                                            <div class="menthor-prof">
+                                                <h3 class="menthor-name">Abraham Lincoln</h3>
+                                                <h4 class="card-profession">3D Design</h4>
+                                            </div>
+                                        </div>
+                                        <button class="mentor-like menhor-follow">Followed</button>
+                                    </div>
+                                    <p class="mentor-text">Hi, I'm Julia Philips. I'm a senior manager at Apple company . . .</p>
+                                    <div class="menthor-progress">
+                                        <div class="menthor-task">
+                                            <img src="./img/main/menthor/01.svg" alt="task">
+                                            <span class="mentor-progress-descr">60 Task</span>
+                                        </div>
+                                        <div class="star-raiting">
+                                            <img src="./img/main/menthor/star.svg" alt="star">
+                                            <span class="mentor-progress-descr">4,9  (910 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
 
             </main>
 
@@ -689,6 +947,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>  
 </body>
 </html>

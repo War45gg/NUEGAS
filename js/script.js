@@ -190,19 +190,26 @@ if (innerWidth<=512) {
 const menuList = document.querySelector('.menu-list')
 const menuLinks = Array.from(menuList.children)
 const sections = Array.from((document.querySelector('.main').children))
+
 menuLinks.forEach(function(iteam, index) {
 
     // Индексы
     iteam.dataset.indexLink = index
+
     iteam.addEventListener('click', function () {
 
         menuLinks.forEach(function(iteam) {
             iteam.classList.remove('_active-menu-iteam')
-
+            iteam.querySelector('.menu-dark-icon').classList.add('_hidden')
+            iteam.querySelector('.menu-icon').classList.remove('_hidden')
         })
+
+        iteam.querySelector('.menu-dark-icon').classList.remove('_hidden')
+        iteam.querySelector('.menu-icon').classList.add('_hidden')
 
         this.classList.add('_active-menu-iteam')
         let i = this.dataset.indexLink
+
 
 // Алгоритм отображения секций
         sections.forEach(function(iteam,index) {
@@ -275,8 +282,21 @@ burgerList.forEach(function(iteam) {
 const taskCard = Array.from(document.querySelectorAll('.task-card'))
 const taskWrap = document.querySelector('.task-limit-wrapper')
 const taskDetail = document.querySelector('.task-detail')
+const overview = document.querySelector('.overview')
+const taskPage = document.querySelector('.task-page')
 taskCard.forEach(function (card) {
     card.addEventListener('click', function(){
+
+        // Проверка на нахождение card на overview
+        if (overview.contains(card)) {
+            overview.classList.add('_hidden')
+            taskbar_right.classList.add('_hidden')
+            taskPage.classList.remove('_hidden')
+            taskbar_right.classList.add('_hidden')
+            flex_wrapper.classList.add('_flex-wrapper-second')
+            main.classList.add('main-fix')
+            
+        }
 
         taskWrap.classList.add('_hidden')
         taskDetail.classList.remove('_hidden')
@@ -289,9 +309,7 @@ taskCard.forEach(function (card) {
             }
         })
         let cardImageSrc = cardImage.src.split('.png')[0] + 'D.png'
-        console.log(cardImageSrc)
-        
-        console.log(cardImageSrc)
+
         
         const detailImage = taskDetail.querySelector('.datail-img')
         detailImage.setAttribute('src', cardImageSrc)
@@ -309,7 +327,14 @@ taskCard.forEach(function (card) {
         iteam.addEventListener('click',function(iteam) {
             taskWrap.classList.remove('_hidden')
             taskDetail.classList.add('_hidden')
-        })
+        }) 
     })
 })
 
+// Mentors slider
+$(document).ready(function(){
+    $('.recent-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    })
+})
