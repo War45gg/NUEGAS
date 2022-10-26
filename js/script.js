@@ -332,9 +332,11 @@ taskCard.forEach(function (card) {
 })
 
 // Mentors slider
-$(document).ready(function(){
-    $('.recent-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-    })
+$('.recent-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots:true,
+    centerMode: true,
 })

@@ -156,6 +156,7 @@ a {
 }
 .main-fix {
     max-width: none;
+    min-width: 0;
 }
 .header {
     margin-bottom: 44px;
@@ -952,16 +953,19 @@ a {
 }
 /* ----MENTORS-PAGE------------------------------------------------------------------------------------ */
 .recent-slider {
-    
 }
 .recent-card {
-    width: 380px;
+    max-width: 328px;
 }
+.recent-card:not(:first-child) {
+    margin-left: 32px;
 
+}
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+.slick-slider.slick-initialized{
+}
 /* Слайдер с точками */
 .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
@@ -970,11 +974,9 @@ a {
 /* Лента слайдов */
 .slick-track {
     display: flex;
-    max-width: 1000px;
 }
 /* Слайд */
 .slick-slide{
-    margin-left: 32px;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
